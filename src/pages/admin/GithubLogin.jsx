@@ -86,13 +86,13 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+// https://githubintegration-0p5t.onrender.com
 const GithubLogin = () => {
   const [repos, setRepos] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const loginUrl = "https://githubintegration-0p5t.onrender.com/auth/github/login";
-  const reposUrl = "https://githubintegration-0p5t.onrender.com/auth/github/my-repos";
+  const loginUrl = "http://localhost:5000/auth/github/login";
+  const reposUrl = "http://localhost:5000/auth/github/my-repos";
 
   const handleLogin = () => {
     window.location.href = loginUrl;
