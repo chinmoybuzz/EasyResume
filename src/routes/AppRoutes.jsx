@@ -10,6 +10,7 @@ import Dashboard from "../pages/admin/Dashboard";
 import Users from "../pages/admin/Users";
 import Myself from "../pages/admin/Myself";
 import GithubIntegration from "../pages/admin/GithubIntegration";
+import GithubLogin from "../pages/admin/GithubLogin";
 import AdminProducts from "../pages/admin/AdminProducts";
 
 const AppRoutes = () => {
@@ -29,6 +30,7 @@ const AppRoutes = () => {
         <Route path="products" element={<AdminProducts />} />
         <Route path="myself" element={<Myself />} />
         <Route path="github" element={<GithubIntegration />} />
+        <Route path="github/login" element={<GithubLogin />} />
       </Route>
     </Routes>
   );

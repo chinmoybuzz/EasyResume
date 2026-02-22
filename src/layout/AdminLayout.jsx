@@ -27,6 +27,9 @@ const AdminLayout = () => {
         <Link to="/admin/github" className="block hover:text-blue-500">
           Github
         </Link>
+        <Link to="/admin/github/login" className="block hover:text-blue-500">
+          Github Login
+        </Link>
 
         {/* <Link to="/admin/products" className="block hover:text-blue-500">
           Products
