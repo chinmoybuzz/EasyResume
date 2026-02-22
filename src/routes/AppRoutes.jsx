@@ -29,8 +29,12 @@ const AppRoutes = () => {
         <Route path="users" element={<Users />} />
         <Route path="products" element={<AdminProducts />} />
         <Route path="myself" element={<Myself />} />
-        <Route path="github" element={<GithubIntegration />} />
-        <Route path="github/login" element={<GithubLogin />} />
+
+        {/* Github Section */}
+        <Route path="github">
+          <Route index element={<GithubIntegration />} />
+          <Route path="login" element={<GithubLogin />} />
+        </Route>
       </Route>
     </Routes>
   );
